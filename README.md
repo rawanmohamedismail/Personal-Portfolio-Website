@@ -2,7 +2,7 @@
 A modern, responsive portfolio website showcasing my projects, skills, and experience as a Computer Science student. Built with clean HTML, CSS, and JavaScript, featuring bilingual support (English/Arabic) and an elegant dark/light theme system.
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://rawanmismail.github.io/personal-website)
-[![GitHub](https://img.shields.io/badge/github-repository-181717?style=for-the-badge&logo=github)](https://github.com/rawanmismail/personal-website)
+
 
 
 ### Design
@@ -114,6 +114,7 @@ The language toggle button switches between versions while preserving the select
 - ✅ Fully responsive design
 - ✅ Custom cursor (desktop)
 - ✅ Smooth scroll animations
+
 
 
 
