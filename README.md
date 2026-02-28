@@ -101,15 +101,6 @@ The language toggle button switches between versions while preserving the select
 
 
 
-## Author
-**Rawan Mohamed**
-
-- LinkedIn: [linkedin.com/in/rawan28-](https://linkedin.com/in/rawan28-)
-- GitHub: [github.com/rawanmismail](https://github.com/rawanmismail)
-- Email: rawan.mohamedismail@yahoo.com
-
-
-
 
 ## Changelog
 
@@ -123,5 +114,6 @@ The language toggle button switches between versions while preserving the select
 - ✅ Fully responsive design
 - ✅ Custom cursor (desktop)
 - ✅ Smooth scroll animations
+
 
 
