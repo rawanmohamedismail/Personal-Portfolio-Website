@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روان محمد - معرض الأعمال</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-ar.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">روان</div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عني</a></li>
+                <li><a href="#education">التعليم</a></li>
+                <li><a href="#volunteering">التطوع</a></li>
+                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#certifications">الشهادات</a></li>
+                <li><a href="#awards">الجوائز</a></li>
+                <li><a href="#projects">المشاريع</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="language-toggle" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="#" class="cv-btn">تحميل السيرة الذاتية</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-background">
+            <div class="gradient-bg"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">روان محمد،</p>
+            <h1 class="hero-role">طالبة علوم الحاسب</h1>
+            <div class="typing-container">
+                <span id="typing"></span><span class="typing-cursor"></span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">عرض المشاريع</a>
+                <a href="#contact" class="btn-secondary">تواصل معي</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/rawanmismail" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rawan28-" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rawan.mohamedismail@yahoo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>مرر لأسفل</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>عني</h2>
+                <p>تعرف على الشخص وراء الكود</p>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-card">
+                    <p class="about-text">
+                        روان طالبة علوم حاسب في جامعة هيريوت وات، لديها اهتمامات في الذكاء الاصطناعي وتطوير الويب والروبوتات. تستمتع بتعلم التقنيات الجديدة وبناء المشاريع وحل المشكلات من خلال التطبيقات العملية. روان متحمسة وقابلة للتكيف وحريصة على المساهمة في المشاريع والفرق التي تعتمد على التكنولوجيا.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>الإمارات العربية المتحدة</span>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <h3>عندما لا أقوم بالبرمجة:</h3>
+                        <div class="interest-grid">
+                            <div class="interest-item"><i class="fas fa-book"></i><span>القراءة</span></div>
+                            <div class="interest-item"><i class="fas fa-futbol"></i><span>كرة القدم</span></div>
+                            <div class="interest-item"><i class="fas fa-table-tennis"></i><span>بادل</span></div>
+                            <div class="interest-item"><i class="fas fa-palette"></i><span>التصميم الجرافيكي</span></div>
+                            <div class="interest-item"><i class="fas fa-music"></i><span>الموسيقى</span></div>
+                            <div class="interest-item"><i class="fas fa-video"></i><span>تحرير الفيديو</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>التعليم</h2>
+                <p>الرحلة الأكاديمية والإنجازات</p>
+            </div>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>سبتمبر 2025 – مارس 2026</span>
+                        </div>
+                        <h3 class="timeline-title">السنة التأسيسية، علوم الحاسب</h3>
+                        <p class="timeline-subtitle">جامعة هيريوت وات، حرم دبي</p>
+                        <div class="timeline-description">
+                            <p>إكمال برنامج القبول للحصول على الدرجة (B80D-DEP) في الهندسة كسنة تأسيسية قبل الانتقال إلى السنة الأولى من بكالوريوس علوم الحاسب في سبتمبر 2026.</p>
+                            <ul>
+                                <li>البرنامج: (B80D-DEP) برنامج القبول للحصول على الدرجة في الهندسة</li>
+                                <li>الأنشطة والجمعيات: نادي التكنولوجيا</li>
+                                <li>الانتقال إلى السنة الأولى من بكالوريوس علوم الحاسب — سبتمبر 2026</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>التجربة التطوعية</h2>
+                <p>إحداث فرق من خلال الخدمة والقيادة</p>
+            </div>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>منسق الاتصالات</h3>
+                    <p class="company">ماراثون خيري، المدرسة البريطانية جيمس ومنصة التعليم المصرية</p>
+                </div>
+                <ul>
+                    <li>تنظيم ماراثون لدعم الإغاثة الإنسانية بالتعاون مع الهلال الأحمر المصري.</li>
+                    <li>تنسيق الفرق متعددة الوظائف لتقديم حدث واسع النطاق في حدود الميزانية والمواعيد النهائية بين التسويق والتمويل ومنسقي المناطق لضمان التوافق.</li>
+                    <li>التفاوض وتقديم المشروع للرئيس التنفيذي ونائب رئيس المجموعة في منصة التعليم المصرية، وتأمين تمويل الفريق.</li>
+                    <li>تحقيق الهدف الرئيسي المتمثل في رفع الوعي بالقضية.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>المهارات والتقنيات</h2>
+                <p>نظرة شاملة على خبرتي التقنية</p>
+            </div>
+            <div class="skills-categories fade-in">
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> لغات البرمجة</h3>
+                    <p>لغات البرمجة الأساسية وتقنيات الويب</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">HTML</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">CSS</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Python</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> الأدوات والمنصات</h3>
+                    <p>أدوات التطوير ومنصات التصميم</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">Microsoft 365</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Canva</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Wix</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">GitHub</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">GitHub Codespaces</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">VS Code</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> الذكاء الاصطناعي والتقنيات الناشئة</h3>
+                    <p>الذكاء الاصطناعي والتقنيات الحديثة</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">الذكاء الاصطناعي</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">هندسة التوجيه</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> المهارات الشخصية</h3>
+                    <p>الكفاءات المهنية والشخصية</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">إدارة الوقت</div></div>
+                        <div class="skill-item"><div class="skill-name">التواصل</div></div>
+                        <div class="skill-item"><div class="skill-name">القيادة</div></div>
+                        <div class="skill-item"><div class="skill-name">العمل الجماعي</div></div>
+                        <div class="skill-item"><div class="skill-name">حل المشكلات</div></div>
+                        <div class="skill-item"><div class="skill-name">القدرة على التكيف</div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>الشهادات</h2>
+                <p>التطوير المهني والتعلم المستمر</p>
+            </div>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>مليون موجه</h3>
+                    <p class="company">مؤسسة دبي للمستقبل ومركز دبي للذكاء الاصطناعي</p>
+                </div>
+                <ul>
+                    <li>إتمام مبادرة وطنية لرفع مهارات الذكاء الاصطناعي تركز على الذكاء الاصطناعي التوليدي والذكاء الاصطناعي الضيق وهندسة التوجيه</li>
+                    <li>تطوير توجيهات فعالة لتحسين دقة الذكاء الاصطناعي والتفكير والإنتاجية عبر حالات استخدام مختلفة</li>
+                    <li>تطبيق أدوات الذكاء الاصطناعي لدعم البحث والكتابة وحل المشكلات وتحسين سير العمل</li>
+                    <li>اكتساب فهم أساسي للاستخدام المسؤول والأخلاقي للذكاء الاصطناعي</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>الجوائز</h2>
+                <p>الاعتراف والإنجازات في مجال الروبوتات والتكنولوجيا</p>
+            </div>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>تحدي التقنية الأولى (FTC) للروبوتات</h3>
+                    <p class="company">جامعة تكساس إيه آند إم ومكتبة قطر الوطنية</p>
+                    <p class="date">فبراير 2024 • الدوحة، قطر</p>
+                </div>
+                <ul>
+                    <li>تصميم وبرمجة روبوت عملي مع فريق المدرسة الثانوية لإكمال مهام المسابقة، بما في ذلك التقاط ووضع عناصر اللعبة تحت قيود معينة على اللوحة الخلفية.</li>
+                    <li>تخطيط مفهوم الروبوت، ثم بنائه واختباره وتحسين التصميم لتحسين الكفاءة والأداء.</li>
+                    <li>حل المشكلات الميكانيكية والمنطقية أثناء التطوير، خاصة تحت ضغط الوقت.</li>
+                    <li>إظهار مهارات قوية في العمل الجماعي وحل المشكلات طوال المسابقة.</li>
+                    <li>تحقيق المركز الثالث بين المدارس المشاركة في قطر.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>المشاريع</h2>
+                <p>أعمال مميزة تعرض مهاراتي التقنية</p>
+            </div>
+
+            <!-- Personal Website -->
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>موقع المعرض الشخصي</h3>
+                    <p class="company"><i class="fas fa-code" style="color:var(--accent); margin-left:0.4rem;"></i> HTML &bull; CSS &bull; JavaScript</p>
+                    <p class="date">2026</p>
+                </div>
+                <ul>
+                    <li>تصميم وبناء موقع معرض شخصي متجاوب بالكامل لعرض المهارات والمشاريع والجوائز والشهادات.</li>
+                    <li>تنفيذ سمات الوضع الداكن والفاتح، والتنقل بالتمرير السلس، وتأثيرات الكتابة المتحركة.</li>
+                    <li>تطبيق مبادئ التصميم النظيف والبسيط مع تنسيق متسق وتأثيرات تفاعلية عند التمرير في جميع الأنحاء.</li>
+                    <li>هيكلة قاعدة الكود عبر ملفات HTML و CSS و JavaScript منفصلة لسهولة الصيانة.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/rawanmismail/personal-website" target="_blank" class="project-btn">
+                        <i class="fab fa-github"></i> عرض على GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Explore Qatar -->
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>استكشف قطر – موقع سياحي</h3>
+                    <p class="company"><i class="fas fa-code" style="color:var(--accent); margin-left:0.4rem;"></i> HTML &bull; CSS &bull; JavaScript</p>
+                    <p class="date">نوفمبر 2025 – يناير 2026</p>
+                </div>
+                <ul>
+                    <li>تصميم وتطوير موقع سياحي متجاوب لعرض ثقافة قطر ومعالمها ومعلومات السفر.</li>
+                    <li>إنشاء تخطيط سهل الاستخدام مع تنقل واضح وعناصر تفاعلية وأقسام محتوى منظمة.</li>
+                    <li>التركيز على التصميم النظيف وإمكانية الوصول وتجربة المستخدم البديهية في جميع الأنحاء.</li>
+                    <li>تحسين تفاعل المستخدم من خلال الرسوم المتحركة البسيطة والتنسيق البصري.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/rawanmismail/explore-qatar-website" target="_blank" class="project-btn">
+                        <i class="fab fa-github"></i> عرض على GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hospital SQL -->
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>نظام إدارة المستشفى – قاعدة بيانات SQL</h3>
+                    <p class="company"><i class="fas fa-database" style="color:var(--accent); margin-left:0.4rem;"></i> SQL &bull; تصميم قواعد البيانات</p>
+                    <p class="date">2026</p>
+                </div>
+                <ul>
+                    <li>تصميم وتنفيذ نظام قاعدة بيانات علاقية لإدارة عمليات المستشفى بما في ذلك المرضى والأطباء والمواعيد والسجلات الطبية.</li>
+                    <li>إنشاء جداول منظمة مع علاقات مفاتيح أساسية وأجنبية مناسبة لضمان سلامة البيانات.</li>
+                    <li>كتابة استعلامات SQL لاسترجاع البيانات والتصفية وإعداد التقارير عبر جداول متعددة ذات صلة.</li>
+                    <li>تطبيق مبادئ التطبيع لقواعد البيانات لتقليل التكرار وتحسين الكفاءة.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/rawanmismail/Hospital-Management-System-SQL-Database-Project" target="_blank" class="project-btn">
+                        <i class="fab fa-github"></i> عرض على GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>تواصل معي</h2>
+                <p>هل لديك مشروع في ذهنك أو تريد أن تقول مرحبا؟ أحب أن أسمع منك.</p>
+            </div>
+            <div class="contact-container fade-in">
+                <div class="contact-info-section">
+                    <h3>لنتواصل</h3>
+                    <p>أنا دائما مهتمة بفرص جديدة ومشاريع مثيرة للاهتمام وتعاون إبداعي. لا تتردد في التواصل!</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>البريد الإلكتروني</h4>
+                                <p>rawan.mohamedismail@yahoo.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>الهاتف</h4>
+                                <p>+971 50 518 4541</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>الموقع</h4>
+                                <p>الإمارات العربية المتحدة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>تابعني</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/rawanmismail" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/rawan28-" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>أرسل رسالة</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label>الاسم *</label>
+                            <input type="text" id="contact-name" placeholder="اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label>البريد الإلكتروني *</label>
+                            <input type="email" id="contact-email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>الموضوع *</label>
+                            <input type="text" id="contact-subject" placeholder="ما هذا؟" required>
+                        </div>
+                        <div class="form-group">
+                            <label>الرسالة *</label>
+                            <textarea id="contact-message" placeholder="أخبرني عن مشروعك أو قل مرحبا!" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 روان محمد. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fas fa-check"></i></div>
+            <h3>تم إرسال الرسالة!</h3>
+            <p>شكرا لك على التواصل. سأعود إليك في أقرب وقت ممكن!</p>
+            <button class="modal-btn" onclick="closeModal()">حسنا</button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script-ar.js"></script>
+</body>
+</html>

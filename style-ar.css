@@ -1,0 +1,93 @@
+/* Arabic RTL Overrides */
+
+body[dir="rtl"] {
+    direction: rtl;
+}
+
+/* Typography adjustments for Arabic */
+body[dir="rtl"] {
+    font-family: 'Segoe UI', Tahoma, 'Arial', sans-serif;
+}
+
+/* Timeline adjustments */
+body[dir="rtl"] .timeline {
+    padding-left: 0;
+    padding-right: 3rem;
+}
+
+body[dir="rtl"] .timeline::before {
+    left: auto;
+    right: 0;
+}
+
+body[dir="rtl"] .timeline-item::before {
+    left: auto;
+    right: -3.45rem;
+}
+
+body[dir="rtl"] .timeline-content:hover {
+    transform: translateX(-8px);
+}
+
+/* Experience card bullets */
+body[dir="rtl"] .experience-card li,
+body[dir="rtl"] .timeline-description li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+body[dir="rtl"] .experience-card li::before,
+body[dir="rtl"] .timeline-description li::before {
+    left: auto;
+    right: 0;
+}
+
+/* Project icons spacing */
+body[dir="rtl"] .experience-header .company i {
+    margin-right: 0;
+    margin-left: 0.4rem;
+}
+
+/* Interest items */
+body[dir="rtl"] .interest-item {
+    flex-direction: row-reverse;
+}
+
+/* Contact cards */
+body[dir="rtl"] .contact-card {
+    flex-direction: row-reverse;
+}
+
+/* Form groups remain LTR for email inputs */
+body[dir="rtl"] input[type="email"] {
+    direction: ltr;
+    text-align: right;
+}
+
+/* Project links */
+body[dir="rtl"] .project-links {
+    flex-direction: row-reverse;
+}
+
+/* Social links */
+body[dir="rtl"] .social-links {
+    flex-direction: row-reverse;
+}
+
+/* Nav buttons */
+body[dir="rtl"] .nav-buttons {
+    flex-direction: row-reverse;
+}
+
+/* Scroll indicator on mobile */
+@media (max-width: 968px) {
+    body[dir="rtl"] .nav-links {
+        right: -100%;
+        left: auto;
+    }
+    
+    body[dir="rtl"] .nav-links.active {
+        right: 0;
+        left: auto;
+    }
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawan Mohamed - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">RAWAN</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="language-toggle" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-text">AR</span>
+                </button>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="#" class="cv-btn">Download CV</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-background">
+            <div class="gradient-bg"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">RAWAN MOHAMED,</p>
+            <h1 class="hero-role">COMPUTER SCIENCE STUDENT</h1>
+            <div class="typing-container">
+                <span id="typing"></span><span class="typing-cursor"></span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/rawanmismail" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rawan28-" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rawan.mohamedismail@yahoo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>About Me</h2>
+                <p>Get to know the person behind the code</p>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-card">
+                    <p class="about-text">
+                        Rawan is a Computer Science student at Heriot-Watt University, with interests in artificial intelligence, web development, and robotics. She enjoys learning new technologies, building projects, and solving problems through practical applications. Rawan is motivated, adaptable, and eager to contribute to technology-driven projects and teams.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>UAE</span>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <h3>When I'm not coding:</h3>
+                        <div class="interest-grid">
+                            <div class="interest-item"><i class="fas fa-book"></i><span>Reading</span></div>
+                            <div class="interest-item"><i class="fas fa-futbol"></i><span>Football</span></div>
+                            <div class="interest-item"><i class="fas fa-table-tennis"></i><span>Padel</span></div>
+                            <div class="interest-item"><i class="fas fa-palette"></i><span>Graphic Design</span></div>
+                            <div class="interest-item"><i class="fas fa-music"></i><span>Music</span></div>
+                            <div class="interest-item"><i class="fas fa-video"></i><span>Video Editing</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Education</h2>
+                <p>Academic journey and achievements</p>
+            </div>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sep 2025 – Mar 2026</span>
+                        </div>
+                        <h3 class="timeline-title">Foundation Degree, Computer Science</h3>
+                        <p class="timeline-subtitle">Heriot-Watt University, Dubai Campus</p>
+                        <div class="timeline-description">
+                            <p>Completing the Degree Entry Programme (B80D-DEP) in Engineering as a foundation year before progressing to BSc Computer Science Year 1 in September 2026.</p>
+                            <ul>
+                                <li>Programme: (B80D-DEP) Degree Entry Programme in Engineering</li>
+                                <li>Activities and societies: Tech Club</li>
+                                <li>Progressing to BSc Computer Science Year 1 — Sep 2026</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Volunteering Experience</h2>
+                <p>Making a difference through service and leadership</p>
+            </div>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>Communications Coordinator</h3>
+                    <p class="company">Charity Marathon, GEMS The British School & Egypt Education Platform</p>
+                </div>
+                <ul>
+                    <li>Organized a marathon supporting humanitarian relief in collaboration with the Egyptian Red Crescent.</li>
+                    <li>Coordinated cross-functional teams to deliver a large-scale event under budget and deadline constraints between marketing, finance, and area coordinators to ensure alignment.</li>
+                    <li>Negotiated and presented the project to the CEO and Group VP of EEP, securing team funding.</li>
+                    <li>Achieved the main goal of raising awareness for the cause.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Skills & Technologies</h2>
+                <p>A comprehensive overview of my technical expertise</p>
+            </div>
+            <div class="skills-categories fade-in">
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <p>Core programming languages and web technologies</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">HTML</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">CSS</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Python</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <p>Development tools and design platforms</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">Microsoft 365</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Canva</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Wix</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">GitHub</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">GitHub Codespaces</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">VS Code</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI & Emerging Tech</h3>
+                    <p>Artificial intelligence and modern technologies</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">Artificial Intelligence</div><div class="skill-bar-container"><div class="skill-bar" data-level="65"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Prompt Engineering</div><div class="skill-bar-container"><div class="skill-bar" data-level="90"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <p>Professional and interpersonal competencies</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">Time Management</div></div>
+                        <div class="skill-item"><div class="skill-name">Communication</div></div>
+                        <div class="skill-item"><div class="skill-name">Leadership</div></div>
+                        <div class="skill-item"><div class="skill-name">Teamwork</div></div>
+                        <div class="skill-item"><div class="skill-name">Problem Solving</div></div>
+                        <div class="skill-item"><div class="skill-name">Adaptability</div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Certifications</h2>
+                <p>Professional development and continued learning</p>
+            </div>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>1 Million Prompters</h3>
+                    <p class="company">Dubai Future Foundation & Dubai Center For Artificial Intelligence</p>
+                </div>
+                <ul>
+                    <li>Completed a national AI upskilling initiative focused on Generative AI, Narrow AI, and prompt engineering</li>
+                    <li>Developed effective prompts to improve AI accuracy, reasoning, and productivity across different use cases</li>
+                    <li>Applied AI tools to support research, writing, problem-solving, and workflow optimization</li>
+                    <li>Gained foundational understanding of responsible and ethical AI use</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Awards</h2>
+                <p>Recognition and achievements in robotics and technology</p>
+            </div>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>First Tech Challenge (FTC) Robotics</h3>
+                    <p class="company">University of Texas A&M & Qatar National Library</p>
+                    <p class="date">Feb 2024 • Doha, Qatar</p>
+                </div>
+                <ul>
+                    <li>Designed and coded a functional robot with my high school team to complete competition tasks, including picking and placing game elements under specific constraints onto the backboard.</li>
+                    <li>Planned the robot's concept, then built, tested, and refined the design to improve efficiency and performance.</li>
+                    <li>Resolved mechanical and logical issues during development, especially under time pressure.</li>
+                    <li>Demonstrated strong teamwork and problem-solving skills throughout the competition.</li>
+                    <li>Achieved 3rd place among participating schools in Qatar.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Projects</h2>
+                <p>Featured work showcasing my technical skills</p>
+            </div>
+
+            <!-- Personal Website -->
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>Personal Portfolio Website</h3>
+                    <p class="company"><i class="fas fa-code" style="color:var(--accent); margin-right:0.4rem;"></i> HTML &bull; CSS &bull; JavaScript</p>
+                    <p class="date">2026</p>
+                </div>
+                <ul>
+                    <li>Designed and built a fully responsive personal portfolio website to showcase skills, projects, awards, and certifications.</li>
+                    <li>Implemented dark and light mode theming, smooth scroll navigation, and animated typing effects.</li>
+                    <li>Applied clean, minimal design principles with consistent styling and interactive hover effects throughout.</li>
+                    <li>Structured the codebase across separate HTML, CSS, and JavaScript files for maintainability.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/rawanmismail/personal-website" target="_blank" class="project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Explore Qatar -->
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>Explore Qatar – Tourism Website</h3>
+                    <p class="company"><i class="fas fa-code" style="color:var(--accent); margin-right:0.4rem;"></i> HTML &bull; CSS &bull; JavaScript</p>
+                    <p class="date">Nov 2025 – Jan 2026</p>
+                </div>
+                <ul>
+                    <li>Designed and developed a responsive tourism website to showcase Qatar's culture, attractions, and travel information.</li>
+                    <li>Created a user-friendly layout with clear navigation, interactive elements, and structured content sections.</li>
+                    <li>Focused on clean design, accessibility, and intuitive user experience throughout.</li>
+                    <li>Improved user engagement through simple animations and visual styling.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/rawanmismail/explore-qatar-website" target="_blank" class="project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hospital SQL -->
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <h3>Hospital Management System – SQL Database</h3>
+                    <p class="company"><i class="fas fa-database" style="color:var(--accent); margin-right:0.4rem;"></i> SQL &bull; Database Design</p>
+                    <p class="date">2026</p>
+                </div>
+                <ul>
+                    <li>Designed and implemented a relational database system to manage hospital operations including patients, doctors, appointments, and medical records.</li>
+                    <li>Created structured tables with appropriate primary and foreign key relationships to ensure data integrity.</li>
+                    <li>Wrote SQL queries for data retrieval, filtering, and reporting across multiple related tables.</li>
+                    <li>Applied database normalization principles to reduce redundancy and improve efficiency.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/rawanmismail/Hospital-Management-System-SQL-Database-Project" target="_blank" class="project-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-container fade-in">
+                <div class="contact-info-section">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities, interesting projects, and creative collaborations. Feel free to reach out!</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>rawan.mohamedismail@yahoo.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+971 50 518 4541</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/rawanmismail" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/rawan28-" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" id="contact-email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" id="contact-subject" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea id="contact-message" placeholder="Tell me about your project or just say hello!" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Rawan Mohamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fas fa-check"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible!</p>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
